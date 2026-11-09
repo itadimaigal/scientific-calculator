@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Scientific Calculator · itadimaigal</title>
+  <meta name="description" content="A free scientific calculator that runs in your browser.">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="calc">
+    <header>
+      <h1>Scientific Calculator</h1>
+      <span id="mode-label" class="mode-label">DEG</span>
+    </header>
+
+    <div class="display">
+      <input id="expr" type="text" inputmode="none" autocomplete="off" spellcheck="false"
+             placeholder="0" aria-label="Expression">
+      <div id="result" class="result" aria-live="polite">0</div>
+    </div>
+
+    <div class="keys">
+      <button data-action="mode" id="mode" class="fn">DEG</button>
+      <button data-insert="(" class="fn">(</button>
+      <button data-insert=")" class="fn">)</button>
+      <button data-action="back" class="fn">⌫</button>
+      <button data-action="clear" class="danger">AC</button>
+
+      <button data-insert="sin(" class="fn">sin</button>
+      <button data-insert="cos(" class="fn">cos</button>
+      <button data-insert="tan(" class="fn">tan</button>
+      <button data-insert="ln(" class="fn">ln</button>
+      <button data-insert="log(" class="fn">log</button>
+
+      <button data-insert="asin(" class="fn">sin⁻¹</button>
+      <button data-insert="acos(" class="fn">cos⁻¹</button>
+      <button data-insert="atan(" class="fn">tan⁻¹</button>
+      <button data-insert="√(" class="fn">√</button>
+      <button data-insert="^2" class="fn">x²</button>
+
+      <button data-insert="7">7</button>
+      <button data-insert="8">8</button>
+      <button data-insert="9">9</button>
+      <button data-insert="÷" class="op">÷</button>
+      <button data-insert="^" class="op">xʸ</button>
+
+      <button data-insert="4">4</button>
+      <button data-insert="5">5</button>
+      <button data-insert="6">6</button>
+      <button data-insert="×" class="op">×</button>
+      <button data-insert="!" class="op">n!</button>
+
+      <button data-insert="1">1</button>
+      <button data-insert="2">2</button>
+      <button data-insert="3">3</button>
+      <button data-insert="−" class="op">−</button>
+      <button data-insert="π" class="op">π</button>
+
+      <button data-insert="0">0</button>
+      <button data-insert=".">.</button>
+      <button data-insert="Ans" class="fn">Ans</button>
+      <button data-insert="+" class="op">+</button>
+      <button data-insert="e" class="op">e</button>
+
+      <button data-action="equals" class="equals">=</button>
+    </div>
+
+    <h2>History</h2>
+    <ul id="history" class="history"></ul>
+
+    <footer>
+      Made with HTML, CSS and JavaScript by <b>itadimaigal</b> ·
+      <a href="https://www.youtube.com/@itadimaigal">YouTube</a> ·
+      <a href="https://github.com/itadimaigal">GitHub</a>
+    </footer>
+  </main>
+  <script src="calc.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
